@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JS 003</title>
+  </head>
+  <body>
+    <h1>JS 003 Object constructor</h1>
+    <br />
+    <h1 id="message"></h1>
+
+    <script>
+      // Constructor function for Person objects
+      function Person(fname, lname, age) {
+        this.firstName = fname;
+        this.lastName = lname;
+        this.age = age;
+      }
+
+      // Create a Person object
+      const myDetails = new Person("Yash", "Dhameliya", 24);
+
+      // Display
+      document.getElementById("message").innerHTML = `My Name is ${myDetails.firstName}`;
+    </script>
+  </body>
+</html>
